@@ -9,7 +9,7 @@ class StaticCollection {
     find(query = {}, projection = "") {
         let results = this.data.filter(item => {
             for (let key in query) {
-                if (item[key] != query[key]) return false;
+                if (item[key] !== query[key]) return false;
             }
             return true;
         });
@@ -46,7 +46,7 @@ class StaticCollection {
     findOne(query) {
         return this.data.find(item => {
             for (let key in query) {
-                if (item[key] != query[key]) return false;
+                if (item[key] !== query[key]) return false;
             }
             return true;
         });

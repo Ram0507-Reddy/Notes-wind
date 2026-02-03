@@ -17,6 +17,8 @@ const ResourceView = () => {
     const [activeTab, setActiveTab] = useState('notes');
     const [selectedFile, setSelectedFile] = useState(null);
     const [pdfBlobUrl, setPdfBlobUrl] = useState(null);
+    const [chapters, setChapters] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     // PDF Blob Fetching (Obfuscation)
     useEffect(() => {
@@ -49,9 +51,6 @@ const ResourceView = () => {
     const handleFileClick = (file) => {
         setSelectedFile(file);
     };
-
-    const [chapters, setChapters] = useState([]);
-    const [loading, setLoading] = useState(true);
 
     // Anti-Piracy: Block Keyboard shortcuts (Disabled for Debugging)
     /*
@@ -87,9 +86,11 @@ const ResourceView = () => {
                         };
                     }
 
-                    // Add item to appropriate category (defaulting to notes for PDFs)
-                    // You can refine this logic based on item.type
-                    const type = item.type === 'pdf' ? 'notes' : 'notes';
+                    // Add item to appropriate category
+                    let type = 'notes';
+                    if (item.type === 'flashcard') type = 'flashcards';
+                    else if (item.type === 'paper') type = 'papers';
+
                     grouped[chId].resources[type].push({
                         title: item.title,
                         size: 'PDF', // Placeholder size or from DB

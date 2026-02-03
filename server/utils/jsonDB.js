@@ -70,13 +70,7 @@ class JsonDB {
         }
     }
 
-    write(data) {
-        try {
-            fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2));
-        } catch (err) {
-            console.error('Error writing DB:', err);
-        }
-    }
+
 
     // Determine the collection name based on structure
     // This expects the DB file to be an object with keys for collections -> db.json: { courseStructure: [], resources: [] }
