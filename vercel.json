@@ -15,10 +15,7 @@
     ],
     "functions": {
         "api/index.js": {
-            "includeFiles": [
-                "server/data/**",
-                "server/public/**"
-            ]
+            "includeFiles": "server/{data,public}/**"
         }
     }
 }
