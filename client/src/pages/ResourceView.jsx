@@ -140,7 +140,7 @@ const ResourceView = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col"
+                        className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col h-[100dvh]"
                         // Disable context menu on the entire modal wrapper
                         onContextMenu={(e) => {
                             e.preventDefault();

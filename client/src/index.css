@@ -54,7 +54,7 @@ h6 {
 
 /* UI Utilities */
 .container-custom {
-  @apply max-w-6xl mx-auto px-6;
+  @apply max-w-6xl mx-auto px-4 md:px-6;
 }
 
 /* Minimalist Button */

@@ -36,7 +36,7 @@ const SemesterSelect = () => {
                     <p className="text-text-secondary mt-1 capitalize">{deptId?.replace('-', ' ')}</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
                     {semesters.map((sem, idx) => (
                         <Link to={`/departments/${deptId}/semesters/${sem}`} key={sem}>
                             <motion.div
