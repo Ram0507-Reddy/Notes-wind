@@ -29,12 +29,32 @@ class JsonDB {
         if (foundPath) {
             this.filePath = foundPath;
         } else {
-            // Default to standard relative if not found (will be created)
-            console.warn("JsonDB: Database NOT found in candidates. creating new at default.");
-            this.filePath = path.join(__dirname, '../data', filename);
-            const dir = path.dirname(this.filePath);
-            if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-            this.write([]);
+            // Fallback: Try to use a temp directory if we can't find it
+            // This allows the app to start even if empty (temporary session)
+            // But primarily we just want to avoid crashing
+            console.warn("JsonDB: CRITICAL - Database NOT found. Using in-memory fallback to prevent crash.");
+            this.filePath = path.join('/tmp', filename); // Writable in Vercel Lambda
+            try {
+                if (!fs.existsSync(this.filePath)) {
+                    fs.writeFileSync(this.filePath, '[]');
+                }
+            } catch (e) {
+                console.error("JsonDB: Failed to create temp DB. Read-only mode active.", e);
+                this.readOnly = true;
+            }
+        }
+    }
+
+    // Wrap write in try-catch
+    write(data) {
+        if (this.readOnly) {
+            console.warn("JsonDB: Skipping write - Read Only Mode");
+            return;
+        }
+        try {
+            fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2));
+        } catch (error) {
+            console.error("JsonDB: Write failed:", error.message);
         }
     }
 
