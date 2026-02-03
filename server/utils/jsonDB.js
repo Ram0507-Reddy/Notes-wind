@@ -13,8 +13,10 @@ class JsonDB {
         const candidates = [
             path.join(__dirname, '../data', filename), // Local / Standard relative
             path.join(process.cwd(), 'data', filename), // Vercel Root?
-            path.join(process.cwd(), 'server', 'data', filename), // Vercel Monorepo Root?
-            path.join('/var/task/server/data', filename) // Vercel Absolute (sometimes)
+            path.join(process.cwd(), 'server', 'data', filename), // Vercel/Netlify Root
+            path.resolve('server/data', filename), // Relative resolve
+            '/var/task/server/data/' + filename, // AWS Lambda Absolute
+            path.join(__dirname, '../../server/data', filename) // Relative from netlify/functions/api.js
         ];
 
         let foundPath = null;
