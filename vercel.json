@@ -7,8 +7,8 @@
             "config": {
                 "includeFiles": [
                     "public/uploads/**",
-                    "data/db.json",
-                    "server/data/db.json"
+                    "data/**",
+                    "server/data/**"
                 ]
             }
         },
@@ -33,7 +33,7 @@
             "handle": "filesystem"
         },
         {
-            "src": "/(.*)",
+            "src": "/((?!api|uploads|assets|favicon.ico).*)",
             "dest": "/index.html"
         }
     ]

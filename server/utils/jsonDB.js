@@ -4,14 +4,36 @@ const path = require('path');
 
 class JsonDB {
     constructor(filename) {
-        this.filePath = path.join(__dirname, '../data', filename);
-        // Ensure data directory exists
-        const dir = path.dirname(this.filePath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
+        // Debugging paths
+        console.log("JsonDB: Initializing for", filename);
+        console.log("__dirname:", __dirname);
+        console.log("process.cwd():", process.cwd());
+
+        // Try to find the file in multiple common locations for local/Vercel
+        const candidates = [
+            path.join(__dirname, '../data', filename), // Local / Standard relative
+            path.join(process.cwd(), 'data', filename), // Vercel Root?
+            path.join(process.cwd(), 'server', 'data', filename), // Vercel Monorepo Root?
+            path.join('/var/task/server/data', filename) // Vercel Absolute (sometimes)
+        ];
+
+        let foundPath = null;
+        for (const p of candidates) {
+            if (fs.existsSync(p)) {
+                console.log("JsonDB: Found database at", p);
+                foundPath = p;
+                break;
+            }
         }
-        // Initialize file if not exists
-        if (!fs.existsSync(this.filePath)) {
+
+        if (foundPath) {
+            this.filePath = foundPath;
+        } else {
+            // Default to standard relative if not found (will be created)
+            console.warn("JsonDB: Database NOT found in candidates. creating new at default.");
+            this.filePath = path.join(__dirname, '../data', filename);
+            const dir = path.dirname(this.filePath);
+            if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
             this.write([]);
         }
     }
