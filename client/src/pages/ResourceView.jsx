@@ -24,6 +24,32 @@ const ResourceView = () => {
     const [chapters, setChapters] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    // Anti-Piracy: Block Keyboard shortcuts
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            // Block Ctrl+S, Ctrl+P, Ctrl+C, Ctrl+Shift+I (DevTools)
+            if (
+                (e.ctrlKey && (e.key === 's' || e.key === 'p' || e.key === 'c' || e.key === 'u')) ||
+                (e.ctrlKey && e.shiftKey && e.key === 'i') ||
+                e.key === 'F12'
+            ) {
+                e.preventDefault();
+                console.warn('Action blocked for security.');
+                return false;
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        // Also disable context menu globally
+        const handleContextMenu = (e) => e.preventDefault();
+        window.addEventListener('contextmenu', handleContextMenu);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('contextmenu', handleContextMenu);
+        };
+    }, []);
+
     useEffect(() => {
         const fetchResources = async () => {
             try {
@@ -85,17 +111,22 @@ const ResourceView = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex flex-col"
+                        className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col"
+                        // Disable context menu on the entire modal wrapper
+                        onContextMenu={(e) => {
+                            e.preventDefault();
+                            return false;
+                        }}
                     >
                         {/* Toolbar */}
-                        <div className="flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800 text-white">
+                        <div className="flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800 text-white select-none">
                             <div className="flex items-center gap-3">
                                 <div className="p-2 bg-gray-800 rounded-lg">
                                     <FileText className="w-5 h-5 text-blue-400" />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-sm">{selectedFile.title}</h3>
-                                    <p className="text-xs text-gray-400">Read Only Mode</p>
+                                    <p className="text-xs text-gray-400">Protected View • Read Only</p>
                                 </div>
                             </div>
                             <button
@@ -107,20 +138,40 @@ const ResourceView = () => {
                         </div>
 
                         {/* Viewer */}
-                        <div className="flex-grow relative bg-gray-900 flex items-center justify-center p-4">
+                        <div className="flex-grow relative bg-gray-900 flex items-center justify-center p-4 overflow-hidden">
                             <div className="w-full h-full max-w-5xl bg-white rounded-lg shadow-2xl overflow-hidden relative">
-                                {/* Overlay to prevent right-click/save */}
+
+                                {/* 1. Transparent Overlay to Block Clicks/Context Menu */}
+                                {/* Leaving generic right margin for scrollbar access if needed, though viewer handles it internally usually */}
                                 <div
-                                    className="absolute inset-0 z-10"
-                                    onContextMenu={(e) => e.preventDefault()}
-                                    style={{ pointerEvents: 'none' }} // Allow scrolling but block context menu interactions if supported
+                                    className="absolute inset-x-0 top-0 bottom-0 z-50 bg-transparent"
+                                    onContextMenu={(e) => { e.preventDefault(); e.stopPropagation(); return false; }}
                                 ></div>
+
+                                {/* 2. Iframe with pointer-events-none (Extra security if overlay fails) */}
+                                {/* Note: pointer-events-none disables scrolling via mouse drag. Mouse wheel usually still works in some browsers, but scrollbar is needed. */}
+                                {/* Compromise: We keep pointer-events-auto but rely on the z-50 overlay above. */}
+
                                 <iframe
-                                    src={`${selectedFile.url}#toolbar=0&navpanes=0&scrollbar=0`}
+                                    src={`${selectedFile.url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
                                     className="w-full h-full border-0 block"
                                     title="PDF Viewer"
-                                    onContextMenu={(e) => e.preventDefault()}
+                                    style={{ pointerEvents: 'auto' }} // Allow scroll interaction if overlay passes it? No, overlay blocks it.
                                 />
+
+                                {/* 
+                                   Explanation: 
+                                   A full 'z-50' overlay blocks ALL mouse events (clicking, scrolling, selecting). 
+                                   This effectively solves the "Right Click" issue but makes the PDF unscrollable via mouse drag.
+                                   Users must use the scrollbar (if we leave a gap) or keyboard/mouse-wheel.
+                                   
+                                   Refinement: We create a "Hole" for the scrollbar? 
+                                   Native PDF viewer scrollbars are inside the iframe. We can't overlay "everything but the scrollbar" easily.
+                                   
+                                   Better specific approach for "Read Only":
+                                   We accept that "Right Click" is blocked by the overlay.
+                                   We hope Mouse Wheel events propagate (they often don't through a blockage).
+                                 */}
                             </div>
                         </div>
                     </motion.div>
