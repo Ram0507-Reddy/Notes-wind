@@ -16,6 +16,35 @@ const ResourceView = () => {
     const { deptId, semId, subId } = useParams();
     const [activeTab, setActiveTab] = useState('notes');
     const [selectedFile, setSelectedFile] = useState(null);
+    const [pdfBlobUrl, setPdfBlobUrl] = useState(null);
+
+    // PDF Blob Fetching (Obfuscation)
+    useEffect(() => {
+        let activeUrl = null;
+
+        if (selectedFile?.url) {
+            const fetchPdf = async () => {
+                try {
+                    setLoading(true);
+                    const res = await fetch(selectedFile.url);
+                    const blob = await res.blob();
+                    activeUrl = URL.createObjectURL(blob);
+                    setPdfBlobUrl(activeUrl);
+                } catch (err) {
+                    console.error("Failed to load PDF securely:", err);
+                } finally {
+                    setLoading(false);
+                }
+            };
+            fetchPdf();
+        } else {
+            setPdfBlobUrl(null);
+        }
+
+        return () => {
+            if (activeUrl) URL.revokeObjectURL(activeUrl);
+        };
+    }, [selectedFile]);
 
     const handleFileClick = (file) => {
         setSelectedFile(file);
@@ -149,12 +178,18 @@ const ResourceView = () => {
                                 {/* Note: pointer-events-none disables scrolling via mouse drag. Mouse wheel usually still works in some browsers, but scrollbar is needed. */}
                                 {/* Compromise: We keep pointer-events-auto but rely on the z-50 overlay above. */}
 
-                                <iframe
-                                    src={`${selectedFile.url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-                                    className="w-full h-full border-0 block"
-                                    title="PDF Viewer"
-                                    style={{ pointerEvents: 'auto' }} // Allow scroll interaction if overlay passes it? No, overlay blocks it.
-                                />
+                                {pdfBlobUrl ? (
+                                    <iframe
+                                        src={`${pdfBlobUrl}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                                        className="w-full h-full border-0 block"
+                                        title="PDF Viewer"
+                                        style={{ pointerEvents: 'auto' }}
+                                    />
+                                ) : (
+                                    <div className="flex items-center justify-center h-full text-white">
+                                        Loading secure document...
+                                    </div>
+                                )}
 
                                 {/* 
                                    Explanation: 
