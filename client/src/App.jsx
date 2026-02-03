@@ -6,14 +6,15 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-import Landing from './pages/Landing';
-import DepartmentSelect from './pages/DepartmentSelect';
-import SemesterSelect from './pages/SemesterSelect';
-import SubjectSelect from './pages/SubjectSelect';
-import ResourceView from './pages/ResourceView';
-import About from './pages/About';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+// Lazy Load Pages
+const Landing = React.lazy(() => import('./pages/Landing'));
+const DepartmentSelect = React.lazy(() => import('./pages/DepartmentSelect'));
+const SemesterSelect = React.lazy(() => import('./pages/SemesterSelect'));
+const SubjectSelect = React.lazy(() => import('./pages/SubjectSelect'));
+const ResourceView = React.lazy(() => import('./pages/ResourceView'));
+const About = React.lazy(() => import('./pages/About'));
+const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -61,7 +62,16 @@ function App() {
       <div className="flex flex-col min-h-screen select-none oncopy='return false' oncut='return false' onpaste='return false'">
         <Navbar />
         <main className="flex-grow">
-          <AnimatedRoutes />
+          <React.Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-white">
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
+                <p className="mt-4 text-indigo-600 font-medium">Loading content...</p>
+              </div>
+            </div>
+          }>
+            <AnimatedRoutes />
+          </React.Suspense>
         </main>
         <Footer />
       </div>

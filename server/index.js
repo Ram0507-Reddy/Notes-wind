@@ -5,6 +5,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const compression = require('compression');
 
 // Load env vars
 const path = require('path');
@@ -22,6 +23,7 @@ app.use(helmet({
     contentSecurityPolicy: false, // Allow inline scripts/styles for simple debug
     crossOriginResourcePolicy: { policy: "cross-origin" } // Allow PDF loading
 }));
+app.use(compression());
 app.use(morgan('dev'));
 
 // Static File Serving (Robust Path)
