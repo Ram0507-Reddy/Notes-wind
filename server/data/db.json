@@ -5,6 +5,36 @@
       "slug": "cyber-security",
       "semesters": [
         {
+          "number": 1,
+          "subjects": [
+            {
+              "name": "Calculus",
+              "code": "calculus",
+              "chapters": []
+            },
+            {
+              "name": "Basic Electrical Engg (EEE)",
+              "code": "eee",
+              "chapters": []
+            },
+            {
+              "name": "Fundamentals of CS (FCS)",
+              "code": "fcs",
+              "chapters": []
+            },
+            {
+              "name": "Programming (PPS)",
+              "code": "pps",
+              "chapters": []
+            },
+            {
+              "name": "Web Designing",
+              "code": "web-designing",
+              "chapters": []
+            }
+          ]
+        },
+        {
           "number": 2,
           "subjects": [
             {
@@ -569,6 +599,402 @@
       "semesterId": 2,
       "subjectId": "Privacy and Security in Online Social Media",
       "chapterId": "General"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Assignment%20_1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Assignment_2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Assignment_3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 4",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Assignment_4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 3",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 4",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Tutorial 1A-1",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%201A-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 1A-2",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%201A-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 1B",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%201B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 2A",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%202A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 2B",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%202B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 3A",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%203A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 3B",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%203B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 4A",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%204A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 4B",
+      "type": "note",
+      "url": "/uploads/sem-1/Calculus/Tutorial%204B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Chapter 1 Notes",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 2 Notes",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 2 Problems",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Chp2_problems.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 3 Notes",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 4 Notes",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Lab Manual",
+      "type": "note",
+      "url": "/uploads/sem-1/EEE/EEE%20lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chp 1 PPT",
+      "type": "ppt",
+      "url": "/uploads/sem-1/EEE/Chp1.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 2 PPT",
+      "type": "ppt",
+      "url": "/uploads/sem-1/EEE/Chp2.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 3 PPT",
+      "type": "ppt",
+      "url": "/uploads/sem-1/EEE/Chp3.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 4 PPT",
+      "type": "ppt",
+      "url": "/uploads/sem-1/EEE/Chp4.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 3",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 4",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 5",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Chp5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Question Bank",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Question_Bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Syllabus",
+      "type": "note",
+      "url": "/uploads/sem-1/FCS/Syllabus_Summary.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/uploads/sem-1/PPS/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/uploads/sem-1/PPS/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/uploads/sem-1/PPS/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/uploads/sem-1/PPS/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
     }
   ]
 }
