@@ -1,0 +1,16 @@
+{
+    "name": "notes-wind-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "scripts": {
+        "build": "cd client && npm run build",
+        "start": "echo 'Use specific workspace scripts'"
+    },
+    "engines": {
+        "node": "20.x"
+    }
+}

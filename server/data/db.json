@@ -1,0 +1,632 @@
+{
+  "courseStructure": [
+    {
+      "department": "Cyber Security",
+      "slug": "cyber-security",
+      "semesters": [
+        {
+          "number": 2,
+          "subjects": [
+            {
+              "name": "Advanced Communication and Interpersonal Skills",
+              "code": "ACIS",
+              "chapters": []
+            },
+            {
+              "name": "ICT Workshop Lab",
+              "code": "ICT W S",
+              "chapters": []
+            },
+            {
+              "name": "Linear Algebra",
+              "code": "LA",
+              "chapters": []
+            },
+            {
+              "name": "Object Oriented Programming",
+              "code": "OOP",
+              "chapters": []
+            },
+            {
+              "name": "Operating System and Platform Security",
+              "code": "NSC",
+              "chapters": []
+            },
+            {
+              "name": "Physics for Semiconductors",
+              "code": "PHY",
+              "chapters": []
+            },
+            {
+              "name": "Privacy and Security in Online Social Media",
+              "code": "PSOSM",
+              "chapters": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Chapter-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.956Z"
+    },
+    {
+      "title": "Chapter-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.958Z"
+    },
+    {
+      "title": "Chapter-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.958Z"
+    },
+    {
+      "title": "Chapter-4",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-5(1)",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-5(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-5",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-6",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-6.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-7",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-7.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-8",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-8.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Chapter-9",
+      "type": "note",
+      "url": "/uploads/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-9.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.959Z"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/uploads/sem-2/ICT_Workshop_Lab(ICT_W_S)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.960Z"
+    },
+    {
+      "title": "Lab manual",
+      "type": "note",
+      "url": "/uploads/sem-2/ICT_Workshop_Lab(ICT_W_S)/Lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.960Z"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/uploads/sem-2/ICT_Workshop_Lab(ICT_W_S)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.960Z"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.960Z"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.960Z"
+    },
+    {
+      "title": "Assignment-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.961Z"
+    },
+    {
+      "title": "Assignment-4",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Assignment-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.961Z"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.961Z"
+    },
+    {
+      "title": "Reference material",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Reference%20material.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.961Z"
+    },
+    {
+      "title": "Tutorial-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Tutorial-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.961Z"
+    },
+    {
+      "title": "Tutorial-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Tutorial-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Tutorial-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Tutorial-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Tutorial-4pdf",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Tutorial-4pdf.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/uploads/sem-2/Linear_Algebra(LA)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.962Z"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/uploads/sem-2/Object_Oriented_Programming(OOP)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.963Z"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/uploads/sem-2/Object_Oriented_Programming(OOP)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.963Z"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Object_Oriented_Programming(OOP)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.964Z"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.964Z"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.964Z"
+    },
+    {
+      "title": "Assignment-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.964Z"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.964Z"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-5",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-6",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-6.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Unit-7",
+      "type": "note",
+      "url": "/uploads/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-7.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.965Z"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Physics-lab manual",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Physics-lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Question-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Question-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Question-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Question-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Reference materials",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Reference%20materials.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Unit-1(1)",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-1(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.966Z"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-2(1)",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-2(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-3(1)",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-3(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-4(1)",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-4(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/uploads/sem-2/Physics_for_Semiconductors(PHY)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.967Z"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/uploads/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.968Z"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/uploads/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.968Z"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/uploads/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "General",
+      "createdAt": "2026-02-03T10:13:12.968Z"
+    }
+  ]
+}
