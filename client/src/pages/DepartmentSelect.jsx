@@ -1,7 +1,7 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Cpu, Code, Database, ArrowRight } from 'lucide-react';
+import { Shield, Cpu, Code, Database, ArrowRight, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 
@@ -12,12 +12,50 @@ const pageVariants = {
 };
 
 const DepartmentSelect = () => {
-    const departments = [
-        { id: 'cyber-security', name: 'Cyber Security', icon: Shield, count: '8 Semesters', bg: 'bg-indigo-50', text: 'text-indigo-600' },
-        { id: 'ai-ml', name: 'AI & Machine Learning', icon: Cpu, count: '8 Semesters', bg: 'bg-purple-50', text: 'text-purple-600' },
-        { id: 'computer-science', name: 'Computer Science', icon: Code, count: '6 Semesters', bg: 'bg-blue-50', text: 'text-blue-600' },
-        { id: 'data-science', name: 'Data Science', icon: Database, count: '4 Semesters', bg: 'bg-teal-50', text: 'text-teal-600' },
+    const [departments, setDepartments] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const iconMap = {
+        'cyber-security': Shield,
+        'ai-ml': Cpu,
+        'computer-science': Code,
+        'data-science': Database
+    };
+
+    const colorMap = [
+        { bg: 'bg-indigo-50', text: 'text-indigo-600' },
+        { bg: 'bg-purple-50', text: 'text-purple-600' },
+        { bg: 'bg-blue-50', text: 'text-blue-600' },
+        { bg: 'bg-teal-50', text: 'text-teal-600' }
     ];
+
+    useEffect(() => {
+        const fetchDepartments = async () => {
+            try {
+                const API_URL = import.meta.env.VITE_API_URL || '';
+                const res = await fetch(`${API_URL}/api/departments`);
+                if (!res.ok) throw new Error('Failed to fetch departments');
+
+                const data = await res.json();
+
+                setDepartments(data.map((dept, idx) => ({
+                    id: dept.slug,
+                    name: dept.department,
+                    icon: iconMap[dept.slug] || BookOpen,
+                    count: `${dept.semesters?.length || 8} Semesters`,
+                    ...colorMap[idx % colorMap.length]
+                })));
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchDepartments();
+    }, []);
+
+    if (loading) return <div className="min-h-screen pt-32 text-center text-text-secondary">Loading streams...</div>;
 
     return (
         <motion.div
