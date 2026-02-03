@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, FileText, Download, ExternalLink, ChevronDown, Layers, FileQuestion, ArrowLeft, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { resources, getResourceUrl } from '../data/resources';
+
 
 
 const pageVariants = {
@@ -21,40 +21,54 @@ const ResourceView = () => {
         setSelectedFile(file);
     };
 
-    // Retrieve Real Data
-    let chapters = [];
-    const subjectData = resources[deptId]?.[semId]?.[subId];
+    const [chapters, setChapters] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    if (subjectData) {
-        chapters = subjectData.chapters.map(ch => ({
-            id: ch.id,
-            title: ch.title,
-            resources: {
-                // Map all items to 'notes' tab for now as they are mixed files
-                notes: ch.items.map(item => ({
-                    title: item.title,
-                    size: item.type.toUpperCase(),
-                    url: getResourceUrl(subId, item.url),
-                    isExternal: false
-                })),
-                flashcards: [],
-                papers: []
+    useEffect(() => {
+        const fetchResources = async () => {
+            try {
+                const API_URL = import.meta.env.VITE_API_URL || '';
+                // subId is the subject name (URL encoded), so we decode it
+                const subjectName = decodeURIComponent(subId);
+
+                const res = await fetch(`${API_URL}/api/resources?departmentId=${deptId}&semesterId=${semId}&subjectId=${encodeURIComponent(subjectName)}`);
+                if (!res.ok) throw new Error('Failed to fetch resources');
+
+                const data = await res.json();
+
+                // Group by chapterId
+                const grouped = {};
+                data.forEach(item => {
+                    const chId = item.chapterId || 'General';
+                    if (!grouped[chId]) {
+                        grouped[chId] = {
+                            id: chId,
+                            title: chId === 'General' ? 'General Resources' : chId,
+                            resources: { notes: [], flashcards: [], papers: [] }
+                        };
+                    }
+
+                    // Add item to appropriate category (defaulting to notes for PDFs)
+                    // You can refine this logic based on item.type
+                    const type = item.type === 'pdf' ? 'notes' : 'notes';
+                    grouped[chId].resources[type].push({
+                        title: item.title,
+                        size: 'PDF', // Placeholder size or from DB
+                        url: item.url.startsWith('http') ? item.url : `${API_URL}${item.url}`,
+                        isExternal: false
+                    });
+                });
+
+                setChapters(Object.values(grouped));
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setLoading(false);
             }
-        }));
-    } else {
-        // Fallback Dummy Data
-        chapters = [
-            {
-                id: 'unit-1',
-                title: 'Unit 1: Introduction (Demo)',
-                resources: {
-                    notes: [{ title: 'Unit 1 Complete Notes', size: '2.4 MB', url: '#' }],
-                    flashcards: [{ title: 'Key Definitions', size: '12 Cards' }],
-                    papers: []
-                }
-            }
-        ];
-    }
+        };
+
+        fetchResources();
+    }, [deptId, semId, subId]);
 
     return (
         <motion.div
@@ -119,7 +133,7 @@ const ResourceView = () => {
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back to Subjects
                     </Link>
-                    <h1 className="text-3xl font-bold text-text-main capitalize mb-2">{subjectData ? subjectData.name : subId?.replace('-', ' ')}</h1>
+                    <h1 className="text-3xl font-bold text-text-main capitalize mb-2">{decodeURIComponent(subId)}</h1>
                     <p className="text-text-secondary">Study materials • {chapters.length} Sections</p>
                 </div>
 

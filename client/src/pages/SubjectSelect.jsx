@@ -14,24 +14,37 @@ const pageVariants = {
 const SubjectSelect = () => {
     const { deptId, semId } = useParams();
 
-    // Default Dummy Data
-    let subjects = [
-        { id: 'maths-2', name: 'Applied Mathematics II', code: '203105201', credits: 4, type: 'Core' },
-        { id: 'dsa', name: 'Data Structures & Algorithms', code: '203105202', credits: 4, type: 'Core' },
-        { id: 'os', name: 'Operating Systems', code: '203105203', credits: 3, type: 'Core' },
-        { id: 'coa', name: 'Computer Organization', code: '203105204', credits: 3, type: 'Elective' },
-    ];
+    const [subjects, setSubjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    // Real Data for Cyber Security Sem 1
-    if (deptId === 'cyber-security' && semId === '1') {
-        subjects = [
-            { id: 'calculus', name: 'Calculus', code: 'MAT101', credits: 4, type: 'Core' },
-            { id: 'eee', name: 'Basic Electrical (EEE)', code: 'EEE101', credits: 3, type: 'Core' },
-            { id: 'fcs', name: 'Fundamentals of CS (FCS)', code: 'CSE101', credits: 4, type: 'Core' },
-            { id: 'pps', name: 'Programming (PPS)', code: 'CSE102', credits: 4, type: 'Lab' },
-            { id: 'web-designing', name: 'Web Designing', code: 'CSE103', credits: 2, type: 'Elective' }
-        ];
-    }
+    useEffect(() => {
+        const fetchSubjects = async () => {
+            try {
+                const API_URL = import.meta.env.VITE_API_URL || '';
+                const res = await fetch(`${API_URL}/api/departments/${deptId}`);
+                if (!res.ok) throw new Error('Failed to fetch structure');
+
+                const data = await res.json();
+                const semesterData = data.semesters.find(s => s.number.toString() === semId);
+
+                if (semesterData) {
+                    setSubjects(semesterData.subjects.map(sub => ({
+                        id: sub.code, // Use code as ID for routing if cleaner, or create a slug
+                        name: sub.name,
+                        code: sub.code,
+                        credits: 3, // Default credit if not in DB
+                        type: 'Core'
+                    })));
+                }
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchSubjects();
+    }, [deptId, semId]);
 
     return (
         <motion.div
@@ -61,7 +74,7 @@ const SubjectSelect = () => {
                 <div className="flex flex-col gap-4">
                     {subjects.map((sub, idx) => (
                         <React.Fragment key={sub.id}>
-                            <Link to={`/departments/${deptId}/semesters/${semId}/subjects/${sub.id}`}>
+                            <Link to={`/departments/${deptId}/semesters/${semId}/subjects/${encodeURIComponent(sub.name)}`}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
