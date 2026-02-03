@@ -37,6 +37,8 @@ const AnimatedRoutes = () => {
 
 function App() {
   React.useEffect(() => {
+    // Debugging Mode: Anti-piracy disabled
+    /*
     const handleContextMenu = (e) => e.preventDefault();
     const handleKeyDown = (e) => {
       if (
@@ -55,11 +57,12 @@ function App() {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
     };
+    */
   }, []);
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen select-none oncopy='return false' oncut='return false' onpaste='return false'">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
           <React.Suspense fallback={

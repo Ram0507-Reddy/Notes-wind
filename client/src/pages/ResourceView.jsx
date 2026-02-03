@@ -126,11 +126,7 @@ const ResourceView = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col h-[100dvh]"
-                        // Disable context menu on the entire modal wrapper
-                        onContextMenu={(e) => {
-                            e.preventDefault();
-                            return false;
-                        }}
+                    // Disable context menu on the entire modal wrapper
                     >
                         {/* Toolbar */}
                         <div className="flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800 text-white select-none">
