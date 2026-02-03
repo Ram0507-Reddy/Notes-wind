@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, BookOpen, Clock, ArrowLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -14,30 +14,38 @@ const pageVariants = {
 const SubjectSelect = () => {
     const { deptId, semId } = useParams();
 
-    const [subjects, setSubjects] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchSubjects = async () => {
             try {
                 const API_URL = import.meta.env.VITE_API_URL || '';
+                console.log('Fetching from:', `${API_URL}/api/departments/${deptId}`);
+
                 const res = await fetch(`${API_URL}/api/departments/${deptId}`);
-                if (!res.ok) throw new Error('Failed to fetch structure');
+                if (!res.ok) throw new Error(`Failed to fetch structure: ${res.status}`);
 
                 const data = await res.json();
+                console.log('API Data:', data);
+
+                if (!data || !data.semesters) throw new Error('Invalid data format');
+
                 const semesterData = data.semesters.find(s => s.number.toString() === semId);
 
                 if (semesterData) {
                     setSubjects(semesterData.subjects.map(sub => ({
-                        id: sub.code, // Use code as ID for routing if cleaner, or create a slug
+                        id: sub.code,
                         name: sub.name,
                         code: sub.code,
-                        credits: 3, // Default credit if not in DB
+                        credits: 3,
                         type: 'Core'
                     })));
+                } else {
+                    console.warn(`Semester ${semId} not found in data`);
                 }
             } catch (err) {
                 console.error(err);
+                setError(err.message);
             } finally {
                 setLoading(false);
             }
@@ -45,6 +53,9 @@ const SubjectSelect = () => {
 
         fetchSubjects();
     }, [deptId, semId]);
+
+    if (loading) return <div className="p-10 text-center">Loading...</div>;
+    if (error) return <div className="p-10 text-center text-red-500">Error: {error}</div>;
 
     return (
         <motion.div
