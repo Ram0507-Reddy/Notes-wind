@@ -1,10 +1,9 @@
 
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
-const CourseStructure = require('./models/CourseStructure');
-const Resource = require('./models/Resource');
+// Use the JSON DB adapter instead of Mongoose models
+const { CourseStructure, Resource } = require('./utils/jsonDB');
 
 // Load environment variables from the same directory
 dotenv.config({ path: path.join(__dirname, '.env') });
@@ -14,20 +13,9 @@ if (!process.env.MONGO_URI) dotenv.config();
 const UPLOADS_DIR = path.join(__dirname, 'public/uploads/sem-2');
 const SERVER_URL_BASE = '/uploads/sem-2'; // Relative URL for frontend
 
-const connectDB = async () => {
-    const connStr = process.env.MONGO_URI || 'mongodb://localhost:27017/uninest';
-    console.log(`Connecting to: ${connStr}`);
-    try {
-        await mongoose.connect(connStr);
-        console.log('MongoDB Connected');
-    } catch (err) {
-        console.error('Connection error:', err);
-        process.exit(1);
-    }
-};
-
 const scanAndSeed = async () => {
-    await connectDB();
+    // No database connection needed for JSON DB
+
 
     try {
         console.log('Clearing existing data...');
@@ -130,16 +118,16 @@ const scanAndSeed = async () => {
         }
 
         // Create CourseStructure
-        const courseStruct = new CourseStructure({
+        const courseData = {
             department: 'Cyber Security',
             slug: 'cyber-security',
             semesters: [{
                 number: 2,
                 subjects: subjects
             }]
-        });
+        };
 
-        await courseStruct.save();
+        await CourseStructure.save(courseData);
         console.log('Course Structure Saved');
 
         if (resources.length > 0) {
