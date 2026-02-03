@@ -14,6 +14,8 @@ const pageVariants = {
 const SubjectSelect = () => {
     const { deptId, semId } = useParams();
 
+    const [subjects, setSubjects] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
