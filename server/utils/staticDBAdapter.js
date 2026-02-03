@@ -26,7 +26,7 @@ class StaticCollection {
             });
         }
 
-        // Return object with sort capability
+        // Return object with sort capability and Promise interface
         return {
             sort: (sortObj) => {
                 const key = Object.keys(sortObj)[0];
@@ -39,6 +39,10 @@ class StaticCollection {
                     });
                 }
                 return results;
+            },
+            // Make the object "Thenable" so 'await find()' resolves to results
+            then: (resolve, reject) => {
+                resolve(results);
             }
         };
     }
