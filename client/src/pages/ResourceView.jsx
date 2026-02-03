@@ -76,7 +76,7 @@ const ResourceView = () => {
             animate="animate"
             exit="exit"
             variants={pageVariants}
-            className="py-12 min-h-screen relative"
+            className="min-h-screen pt-24 pb-12 relative"
         >
             {/* PDF Viewer Modal */}
             <AnimatePresence>

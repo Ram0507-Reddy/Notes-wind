@@ -65,7 +65,7 @@ const SubjectSelect = () => {
             animate="animate"
             exit="exit"
             variants={pageVariants}
-            className="py-12 min-h-screen"
+            className="min-h-screen pt-24 pb-12"
         >
             <div className="container-custom max-w-5xl">
 
