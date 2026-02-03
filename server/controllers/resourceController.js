@@ -1,4 +1,4 @@
-const { CourseStructure, Resource } = require('../utils/jsonDB');
+const { CourseStructure, Resource } = require('../utils/staticDBAdapter');
 
 // @desc    Get all departments
 // @route   GET /api/departments

@@ -1,0 +1,1005 @@
+// Auto-generated Static Database for Serverless Compliance
+// Eliminates filesystem reads at runtime
+
+const db = {
+  "courseStructure": [
+    {
+      "department": "Cyber Security",
+      "slug": "cyber-security",
+      "semesters": [
+        {
+          "number": 1,
+          "subjects": [
+            {
+              "name": "Calculus",
+              "code": "calculus",
+              "chapters": []
+            },
+            {
+              "name": "Basic Electrical Engg (EEE)",
+              "code": "eee",
+              "chapters": []
+            },
+            {
+              "name": "Fundamentals of CS (FCS)",
+              "code": "fcs",
+              "chapters": []
+            },
+            {
+              "name": "Programming (PPS)",
+              "code": "pps",
+              "chapters": []
+            },
+            {
+              "name": "Web Designing",
+              "code": "web-designing",
+              "chapters": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subjects": [
+            {
+              "name": "Advanced Communication and Interpersonal Skills",
+              "code": "ACIS",
+              "chapters": []
+            },
+            {
+              "name": "ICT Workshop Lab",
+              "code": "ICT W S",
+              "chapters": []
+            },
+            {
+              "name": "Linear Algebra",
+              "code": "LA",
+              "chapters": []
+            },
+            {
+              "name": "Object Oriented Programming",
+              "code": "OOP",
+              "chapters": []
+            },
+            {
+              "name": "Operating System and Platform Security",
+              "code": "NSC",
+              "chapters": []
+            },
+            {
+              "name": "Physics for Semiconductors",
+              "code": "PHY",
+              "chapters": []
+            },
+            {
+              "name": "Privacy and Security in Online Social Media",
+              "code": "PSOSM",
+              "chapters": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Chapter-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-5(1)",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-5(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-5",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-6",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-6.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-7",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-7.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-8",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-8.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Chapter-9",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Advanced_Communication_and_Interpersonal_Skills(ACIS)/Chapter-9.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Advanced Communication and Interpersonal Skills",
+      "chapterId": "Chapters"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/ICT_Workshop_Lab(ICT_W_S)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Lab manual",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/ICT_Workshop_Lab(ICT_W_S)/Lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "Lab Manuals"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/ICT_Workshop_Lab(ICT_W_S)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "ICT Workshop Lab",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Assignment-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Reference material",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Reference%20material.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Reference Materials"
+    },
+    {
+      "title": "Tutorial-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Tutorial-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Tutorial-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Tutorial-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial-4pdf",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Tutorial-4pdf.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Linear_Algebra(LA)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Linear Algebra",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Object_Oriented_Programming(OOP)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Object_Oriented_Programming(OOP)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Object_Oriented_Programming(OOP)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Object Oriented Programming",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-5",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-6",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-6.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-7",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Operating_System_and_Platform_Security(NSC)/Unit-7.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Operating System and Platform Security",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Assignment-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Physics-lab manual",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Physics-lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Lab Manuals"
+    },
+    {
+      "title": "Question-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Question-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Question-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Question-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Reference materials",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Reference%20materials.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Reference Materials"
+    },
+    {
+      "title": "Unit-1(1)",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-1(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-2(1)",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-2(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-3(1)",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-3(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-4(1)",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-4(1).pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Unit-4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Physics_for_Semiconductors(PHY)/Unit-4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Physics for Semiconductors",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Assignment",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Assignment.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Question bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Question%20bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "Question Banks"
+    },
+    {
+      "title": "Unit-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-2/Privacy_and_Security_in_Online_Social_Media(PSOSM)/Unit-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 2,
+      "subjectId": "Privacy and Security in Online Social Media",
+      "chapterId": "Units"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Assignment%20_1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Assignment_2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Assignment_3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Assignment_4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Chapter 4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Chapters & Notes"
+    },
+    {
+      "title": "Tutorial 1A-1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%201A-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 1A-2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%201A-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 1B",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%201B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 2A",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%202A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 2B",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%202B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 3A",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%203A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 3B",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%203B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 4A",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%204A.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Tutorial 4B",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/Calculus/Tutorial%204B.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Calculus",
+      "chapterId": "Tutorials"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Assignments"
+    },
+    {
+      "title": "Chapter 1 Notes",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 2 Notes",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 2 Problems",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp2_problems.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 3 Notes",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chapter 4 Notes",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Lab Manual",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/EEE/EEE%20lab%20manual.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Lecture Notes"
+    },
+    {
+      "title": "Chp 1 PPT",
+      "type": "ppt",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp1.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 2 PPT",
+      "type": "ppt",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp2.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 3 PPT",
+      "type": "ppt",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp3.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chp 4 PPT",
+      "type": "ppt",
+      "url": "/materials/cyber-security/sem-1/EEE/Chp4.pptx",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Basic Electrical Engg (EEE)",
+      "chapterId": "Presentation Slides"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Chp3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 4",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Chp4.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Chapter 5",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Chp5.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Course Content"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 3",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Assignment-3.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Question Bank",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Question_Bank.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Syllabus",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/FCS/Syllabus_Summary.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Fundamentals of CS (FCS)",
+      "chapterId": "Assignments & QB"
+    },
+    {
+      "title": "Assignment 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/PPS/Assignment-1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Assignment 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/PPS/Assignment-2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Chapter 1",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/PPS/Chp1.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    },
+    {
+      "title": "Chapter 2",
+      "type": "note",
+      "url": "/materials/cyber-security/sem-1/PPS/Chp2.pdf",
+      "departmentId": "cyber-security",
+      "semesterId": 1,
+      "subjectId": "Programming (PPS)",
+      "chapterId": "All Resources"
+    }
+  ]
+};
+
+module.exports = db;
