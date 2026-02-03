@@ -27,8 +27,8 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-4">Connect</h4>
                         <ul className="space-y-2 text-text-muted">
-                            <li><a href="#" className="hover:text-primary transition-colors">GitHub</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
+                            <li><a href="https://github.com/Ram0507-Reddy/Notes-wind" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a></li>
+                            <li><a href="https://wa.me/85912533326" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors font-medium">WhatsApp Support</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
                         </ul>
                     </div>

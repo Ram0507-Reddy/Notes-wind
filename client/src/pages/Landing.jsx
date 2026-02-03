@@ -155,12 +155,18 @@ const Landing = () => {
       <section className="py-24">
         <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-8 bg-black text-white p-12 rounded-2xl">
           <div>
-            <h3 className="text-2xl font-bold mb-2">Open Source Initiative</h3>
-            <p className="text-gray-400">Contribute to the roadmap on GitHub.</p>
+            <h3 className="text-2xl font-bold mb-2">Have resources to share?</h3>
+            <p className="text-gray-400">Connect with us on WhatsApp to report issues or submit new notes.</p>
           </div>
-          <Link to="/departments" className="px-8 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-colors">
-            Start Browinsg
-          </Link>
+          <div className="flex gap-4">
+            <a href="https://wa.me/85912533326" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-500 transition-colors flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              Chat on WhatsApp
+            </a>
+            <Link to="/departments" className="px-8 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-colors">
+              Start Browsing
+            </Link>
+          </div>
         </div>
       </section>
     </div>
