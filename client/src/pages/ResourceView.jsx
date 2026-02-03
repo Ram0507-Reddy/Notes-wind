@@ -141,13 +141,9 @@ const ResourceView = () => {
                         <div className="flex-grow relative bg-gray-900 flex items-center justify-center p-4 overflow-hidden">
                             <div className="w-full h-full max-w-5xl bg-white rounded-lg shadow-2xl overflow-hidden relative">
 
-                                {/* 1. Transparent Overlay to Block Clicks/Context Menu */}
-                                {/* LEFT GAP: We cover most of the screen */}
-                                {/* RIGHT GAP: We leave 24px (right-6) open for the scrollbar */}
-                                <div
-                                    className="absolute top-0 bottom-0 left-0 right-6 z-50 bg-transparent"
-                                    onContextMenu={(e) => { e.preventDefault(); e.stopPropagation(); return false; }}
-                                ></div>
+                                {/* 1. Protection Note */}
+                                {/* We removed the full overlay because it blocks scrolling on cross-origin iframes */}
+                                {/* Keyboard shortcuts and #toolbar=0 provide the primary security now */}
 
                                 {/* 2. Iframe with pointer-events-none (Extra security if overlay fails) */}
                                 {/* Note: pointer-events-none disables scrolling via mouse drag. Mouse wheel usually still works in some browsers, but scrollbar is needed. */}
