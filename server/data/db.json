@@ -85,7 +85,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-2",
@@ -94,7 +94,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-3",
@@ -103,7 +103,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-4",
@@ -112,7 +112,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-5(1)",
@@ -121,7 +121,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-5",
@@ -130,7 +130,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-6",
@@ -139,7 +139,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-7",
@@ -148,7 +148,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-8",
@@ -157,7 +157,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Chapter-9",
@@ -166,7 +166,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Advanced Communication and Interpersonal Skills",
-      "chapterId": "General"
+      "chapterId": "Chapters"
     },
     {
       "title": "Assignment",
@@ -175,7 +175,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "ICT Workshop Lab",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Lab manual",
@@ -184,7 +184,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "ICT Workshop Lab",
-      "chapterId": "General"
+      "chapterId": "Lab Manuals"
     },
     {
       "title": "Question bank",
@@ -193,7 +193,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "ICT Workshop Lab",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Assignment-1",
@@ -202,7 +202,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-2",
@@ -211,7 +211,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-3",
@@ -220,7 +220,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-4",
@@ -229,7 +229,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Question bank",
@@ -238,7 +238,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Reference material",
@@ -247,7 +247,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Reference Materials"
     },
     {
       "title": "Tutorial-1",
@@ -256,7 +256,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Tutorials"
     },
     {
       "title": "Tutorial-2",
@@ -265,7 +265,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Tutorials"
     },
     {
       "title": "Tutorial-3",
@@ -274,7 +274,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Tutorials"
     },
     {
       "title": "Tutorial-4pdf",
@@ -283,7 +283,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Tutorials"
     },
     {
       "title": "Unit-1",
@@ -292,7 +292,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-2",
@@ -301,7 +301,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-3",
@@ -310,7 +310,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-4",
@@ -319,7 +319,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Linear Algebra",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Assignment",
@@ -328,7 +328,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Object Oriented Programming",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Question bank",
@@ -337,7 +337,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Object Oriented Programming",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Unit-1",
@@ -346,7 +346,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Object Oriented Programming",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Assignment-1",
@@ -355,7 +355,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-2",
@@ -364,7 +364,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-3",
@@ -373,7 +373,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Question bank",
@@ -382,7 +382,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Unit-1",
@@ -391,7 +391,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-2",
@@ -400,7 +400,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-3",
@@ -409,7 +409,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-4",
@@ -418,7 +418,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-5",
@@ -427,7 +427,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-6",
@@ -436,7 +436,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-7",
@@ -445,7 +445,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Operating System and Platform Security",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Assignment-1",
@@ -454,7 +454,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Assignment-2",
@@ -463,7 +463,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Physics-lab manual",
@@ -472,7 +472,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Lab Manuals"
     },
     {
       "title": "Question-1",
@@ -481,7 +481,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Question-2",
@@ -490,7 +490,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Reference materials",
@@ -499,7 +499,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Reference Materials"
     },
     {
       "title": "Unit-1(1)",
@@ -508,7 +508,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-1",
@@ -517,7 +517,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-2(1)",
@@ -526,7 +526,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-2",
@@ -535,7 +535,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-3(1)",
@@ -544,7 +544,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-3",
@@ -553,7 +553,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-4(1)",
@@ -562,7 +562,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Unit-4",
@@ -571,7 +571,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Physics for Semiconductors",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Assignment",
@@ -580,7 +580,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Privacy and Security in Online Social Media",
-      "chapterId": "General"
+      "chapterId": "Assignments"
     },
     {
       "title": "Question bank",
@@ -589,7 +589,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Privacy and Security in Online Social Media",
-      "chapterId": "General"
+      "chapterId": "Question Banks"
     },
     {
       "title": "Unit-1",
@@ -598,7 +598,7 @@
       "departmentId": "cyber-security",
       "semesterId": 2,
       "subjectId": "Privacy and Security in Online Social Media",
-      "chapterId": "General"
+      "chapterId": "Units"
     },
     {
       "title": "Assignment 1",
