@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Cpu, Code, Database, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import AdBanner from '../components/AdBanner';
+
 
 const pageVariants = {
     initial: { opacity: 0, scale: 0.98 },
@@ -28,7 +28,7 @@ const DepartmentSelect = () => {
             className="py-16 min-h-screen"
         >
             <div className="container-custom">
-                <AdBanner variant="leaderboard" className="mb-12" />
+
 
                 <div className="mb-12">
                     <h1 className="text-4xl font-bold text-text-main tracking-tight">Select Department</h1>
@@ -60,12 +60,7 @@ const DepartmentSelect = () => {
                                     </div>
                                 </motion.div>
                             </Link>
-                            {/* Inject Ad after 2nd (index 1) */}
-                            {(idx + 1) % 2 === 0 && (
-                                <div className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center py-4">
-                                    <AdBanner variant="leaderboard" />
-                                </div>
-                            )}
+
                         </React.Fragment>
                     ))}
                 </div>

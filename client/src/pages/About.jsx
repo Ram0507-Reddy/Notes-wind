@@ -15,10 +15,8 @@ const About = () => {
             </div>
 
             <div className="py-20 container-custom">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <TeamMember name="Shriram Venkatram Reddy" role="Lead Developer" />
-                    <TeamMember name="Jayesh Pawar" role="UI/UX Designer" />
-                    <TeamMember name="Parakh Karan" role="Resource Manager" />
+                <div className="flex justify-center">
+                    <TeamMember name="Shriram Venkatram Reddy" role="Creator, Tech Lead & Designer" />
                 </div>
             </div>
         </div>

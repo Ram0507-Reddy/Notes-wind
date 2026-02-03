@@ -4,8 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, FileText, Download, ExternalLink, ChevronDown, Layers, FileQuestion, ArrowLeft, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { resources, getResourceUrl } from '../data/resources';
-import AdBanner from '../components/AdBanner';
-import InterstitialAd from '../components/InterstitialAd';
+
 
 const pageVariants = {
     initial: { opacity: 0, y: 20 },
@@ -17,20 +16,9 @@ const ResourceView = () => {
     const { deptId, semId, subId } = useParams();
     const [activeTab, setActiveTab] = useState('notes');
     const [selectedFile, setSelectedFile] = useState(null);
-    const [showAd, setShowAd] = useState(false);
-    const [pendingFile, setPendingFile] = useState(null);
 
     const handleFileClick = (file) => {
-        setPendingFile(file);
-        setShowAd(true);
-    };
-
-    const handleAdSame = () => {
-        setShowAd(false);
-        if (pendingFile) {
-            setSelectedFile(pendingFile);
-            setPendingFile(null);
-        }
+        setSelectedFile(file);
     };
 
     // Retrieve Real Data
@@ -144,9 +132,6 @@ const ResourceView = () => {
                             <TabButton id="flashcards" label="Flashcards" icon={Layers} active={activeTab} set={setActiveTab} />
                             <TabButton id="papers" label="Papers" icon={FileQuestion} active={activeTab} set={setActiveTab} />
                         </div>
-                        <div className="hidden md:block">
-                            <AdBanner variant="rectangle" className="mt-6 sticky top-96" />
-                        </div>
                     </div>
 
                     {/* Main Content */}
@@ -209,8 +194,6 @@ const ResourceView = () => {
                     </div>
                 </div>
             </div>
-            {/* Interstitial Ad Layer */}
-            {showAd && <InterstitialAd onComplete={handleAdSame} />}
         </motion.div>
     );
 };

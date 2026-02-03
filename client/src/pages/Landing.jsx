@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Layers, ShieldCheck, Zap, Terminal, Cpu, Database, Code } from 'lucide-react';
 import { motion } from 'framer-motion';
-import AdBanner from '../components/AdBanner';
+
 
 const hoverVariant = {
   hover: { y: -4, transition: { duration: 0.2 } }
@@ -99,7 +99,7 @@ const Landing = () => {
       {/* Department Quick List */}
       <section className="py-24 border-b border-border-default">
         <div className="container-custom">
-          <AdBanner variant="leaderboard" className="mb-12" />
+
 
           <div className="flex justify-between items-end mb-12">
             <div>

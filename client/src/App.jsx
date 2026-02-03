@@ -35,9 +35,30 @@ const AnimatedRoutes = () => {
 };
 
 function App() {
+  React.useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    const handleKeyDown = (e) => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (['I', 'J', 'C'].includes(e.key))) ||
+        (e.ctrlKey && ['u', 's', 'p'].includes(e.key.toLowerCase()))
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen select-none oncopy='return false' oncut='return false' onpaste='return false'">
         <Navbar />
         <main className="flex-grow">
           <AnimatedRoutes />

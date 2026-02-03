@@ -10,7 +10,7 @@ const pageVariants = {
     exit: { opacity: 0, x: -20, transition: { duration: 0.3 } }
 };
 
-import AdBanner from '../components/AdBanner';
+
 
 const SemesterSelect = () => {
     const { deptId } = useParams();
@@ -25,7 +25,7 @@ const SemesterSelect = () => {
             className="py-12 min-h-screen"
         >
             <div className="container-custom">
-                <AdBanner variant="leaderboard" className="mb-8" />
+
                 <Link to="/departments" className="inline-flex items-center text-text-secondary hover:text-text-main mb-6 font-medium transition-colors">
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Departments

@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, BookOpen, Clock, ArrowLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
-import AdBanner from '../components/AdBanner';
+
 
 const pageVariants = {
     initial: { opacity: 0, x: 20 },
@@ -42,7 +42,7 @@ const SubjectSelect = () => {
             className="py-12 min-h-screen"
         >
             <div className="container-custom max-w-5xl">
-                <AdBanner variant="leaderboard" className="mb-8" />
+
                 <Link to={`/departments/${deptId}`} className="inline-flex items-center text-text-secondary hover:text-text-main mb-8 font-medium transition-colors">
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Semesters
@@ -89,8 +89,7 @@ const SubjectSelect = () => {
                                     </div>
                                 </motion.div>
                             </Link>
-                            {/* Inject Ad after EVERY item for high density */}
-                            <AdBanner variant="leaderboard" className="my-4" />
+
                         </React.Fragment>
                     ))}
                 </div>
