@@ -11,6 +11,6 @@
         "start": "cd server && npm start"
     },
     "engines": {
-        "node": "18.x"
+        "node": ">=18.0.0"
     }
 }
