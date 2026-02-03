@@ -12,5 +12,10 @@
             "source": "/((?!api|uploads|assets|favicon.ico).*)",
             "destination": "/index.html"
         }
-    ]
+    ],
+    "functions": {
+        "api/index.js": {
+            "includeFiles": "server/data/**"
+        }
+    }
 }
