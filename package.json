@@ -7,10 +7,10 @@
         "server"
     ],
     "scripts": {
-        "build": "cd client && npm run build",
-        "start": "echo 'Use specific workspace scripts'"
+        "build": "cd client && npm install && npm run build && cd ..",
+        "start": "cd server && npm start"
     },
     "engines": {
-        "node": "20.x"
+        "node": "18.x"
     }
 }
