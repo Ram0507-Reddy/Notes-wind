@@ -144,5 +144,7 @@ export const getResourceUrl = (subject, filename) => {
     const safeFolder = encodeURIComponent(folderMap[subject]);
 
     // Updated path to match physical location (sem-1/Calculus/...)
-    return `/materials/cyber-security/sem-1/${safeFolder}/${safeFilename}`;
+    // In production, this should point to the backend URL
+    const BASE_URL = import.meta.env.VITE_API_URL || '';
+    return `${BASE_URL}/uploads/sem-1/${safeFolder}/${safeFilename}`;
 };

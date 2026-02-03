@@ -1,0 +1,54 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server/index.js",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "server/public/uploads/**"
+                ]
+            }
+        },
+        {
+            "src": "client/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist"
+            }
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/server/index.js"
+        },
+        {
+            "source": "/uploads/(.*)",
+            "destination": "/server/index.js"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/client/dist/$1"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "X-Frame-Options",
+                    "value": "DENY"
+                },
+                {
+                    "key": "X-XSS-Protection",
+                    "value": "1; mode=block"
+                }
+            ]
+        }
+    ]
+}
