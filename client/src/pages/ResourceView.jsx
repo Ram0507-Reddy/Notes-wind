@@ -53,31 +53,15 @@ const ResourceView = () => {
     const [chapters, setChapters] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // Anti-Piracy: Block Keyboard shortcuts
+    // Anti-Piracy: Block Keyboard shortcuts (Disabled for Debugging)
+    /*
     useEffect(() => {
         const handleKeyDown = (e) => {
-            // Block Ctrl+S, Ctrl+P, Ctrl+C, Ctrl+Shift+I (DevTools)
-            if (
-                (e.ctrlKey && (e.key === 's' || e.key === 'p' || e.key === 'c' || e.key === 'u')) ||
-                (e.ctrlKey && e.shiftKey && e.key === 'i') ||
-                e.key === 'F12'
-            ) {
-                e.preventDefault();
-                console.warn('Action blocked for security.');
-                return false;
-            }
+            // ...
         };
-
-        window.addEventListener('keydown', handleKeyDown);
-        // Also disable context menu globally
-        const handleContextMenu = (e) => e.preventDefault();
-        window.addEventListener('contextmenu', handleContextMenu);
-
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-            window.removeEventListener('contextmenu', handleContextMenu);
-        };
+        // ...
     }, []);
+    */
 
     useEffect(() => {
         const fetchResources = async () => {
