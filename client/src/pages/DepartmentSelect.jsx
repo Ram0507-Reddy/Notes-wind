@@ -63,7 +63,7 @@ const DepartmentSelect = () => {
             animate="animate"
             exit="exit"
             variants={pageVariants}
-            className="py-16 min-h-screen"
+            className="min-h-screen pt-24 pb-16"
         >
             <div className="container-custom">
 
