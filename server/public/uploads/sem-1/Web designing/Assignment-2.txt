@@ -1,0 +1,20 @@
+Assignment-2:
+Explain the concept of web hosting. Why is hosting required for making a website accessible on the internet?
+
+What is a domain name? Describe the difference between a domain name, a URL, and a web server.
+
+Define DNS (Domain Name System). How does DNS help users access websites using human-readable names?
+
+Compare different types of web hosting services (shared hosting, VPS, dedicated hosting, cloud hosting). Provide advantages and disadvantages of each.
+
+Describe the complete process of publishing a website online. Include steps such as buying a domain, choosing hosting, uploading files, and configuring DNS.
+
+Explain any two deployment methods (e.g., File Upload via cPanel, FTP deployment, Git-based deployment, GitHub Pages, or Netlify). How do they differ?
+
+What is the role of Git and GitHub in website development? Give an example of how version control helps during collaborative projects.
+
+Explain how GitHub Pages works for hosting static websites. What are its limitations compared to traditional hosting?
+
+What is SEO (Search Engine Optimization)? List and explain any four basic SEO practices that improve website visibility.
+
+Compare Netlify and traditional hosting platforms. What features make Netlify suitable for modern web deployment

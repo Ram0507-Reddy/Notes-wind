@@ -1,0 +1,37 @@
+Assignment-1:
+1. Explain the different types of CSS selectors (element, class, ID, pseudo-classes such as :hover and :active).
+
+Give examples of each selector.
+
+2. What is the CSS Box Model?
+
+Describe the role of content, padding, margin, border, height, width, and explain how they affect layout.
+
+3. Compare display: block, display: inline, and display: inline-block with suitable examples.
+
+Explain how visibility and overflow properties are used.
+
+4. Write a short note on CSS colors, fonts, and backgrounds.
+
+Use properties such as font-family, font-size, font-weight, and background-related properties.
+
+5. What is Flexbox?
+
+Explain the use of properties like justify-content, align-items, flex-wrap, and flex-direction with a practical example.
+
+6. Explain the basic structure and purpose of CSS Grid.
+
+Describe properties such as grid-template-rows, grid-template-columns, gap, and demonstrate how Grid differs from Flexbox.
+
+7. Describe the different CSS position values (static, relative, absolute, fixed) and explain how z-index affects stacked elements.
+8. Write the syntax and purpose of media queries.
+
+How do media queries help in responsive web design? Provide an example.
+
+9. Explain CSS transitions and animations.
+
+Describe properties like transition-duration, timing-function, animation-name, iteration-count, and give an example animation.
+
+10. What are CSS variables?
+
+Explain how advanced styling features like shadows, gradients, border-radius, and pre-defined templates are used in modern web development.
